@@ -1,0 +1,160 @@
+/* Sección de Formulario de Contacto */
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ede5db;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+/* Estilos para la imagen en la sección de banner */
+#banner img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen dentro de su contenedor */
+    object-fit: cover; /* Ajusta el tamaño de la imagen manteniendo la relación de aspecto y recortando el exceso */
+}
+
+
+/* Estilos para la sección de sitios */
+#sitios-para-visitar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas con igual flexibilidad */
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+.sitio {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sitio img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+h2{
+    text-align: center;
+}
+
+/* Estilos para las cards */
+#paquetes {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    border: 1px solid #ddd; /* Borde delgado */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 8px; /* Espaciado interno */
+    margin: 15px; /* Margen externo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    inline-size: 350px;
+    inline-size: none;
+}
+
+.card h3 {
+    color: #333; /* Color del título */
+}
+
+.card p {
+    color: #666; /* Color del texto */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el mouse */
+}
+
+@media (max-width: 767px) {
+    .card {
+        flex: 0 0 calc(100% - 20px); /* Cambia a ancho completo en dispositivos móviles */
+        inline-size: none;
+    }
+}
+
+
+#contacto {
+    text-align: center;
+    padding: 20px;
+}
+
+#formulario {
+    max-width: 400px;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /* Cambiado de row a column */
+    gap: 10px;
+}
+
+
+
+.form-group input,
+.form-group textarea {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#apellidos{
+    width: 100%;
+    flex-direction: column-reverse;
+}
+
+
+label {
+    font-weight: bold;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #2eb77b;
+}
+
+#nombre, #apellidos {
+    flex: 1;
+}
+
+/* Ajuste para hacer que el formulario sea más responsivo */
+@media (max-width: 500px) {
+    form {
+        max-width: 100%;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+}
+
+button:hover {
+    background-color: #4c524f;
+}
+
+#derechos {
+    text-align: center;
+}

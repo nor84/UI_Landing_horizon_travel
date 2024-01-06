@@ -1,13 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Landing de Horizon Travel" />
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="C:\Users\Kratos\Desktop\UI_Landing_horizon_travel\static\css\index.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  </head>
+  <body>
     <h1>Horizon Travel</h1>
-    
-    
-</body>
+    <header>
+      <div id="banner">
+        <img
+          src="C:\Users\Kratos\Desktop\UI_Landing_horizon_travel\static\image\couple.jpg"
+          alt="Pareja"
+        />
+      </div>
+    </header>
+
+    <!-- Sección de Sitios de Ejemplo -->
+    <h2>Destinos populares</h2>
+    <section id="sitios-para-visitar">
+      <div class="sitio">
+        <a href="sitio1.html">
+          <img src="sitio1.jpg" alt="Sitio 1" />
+        </a>
+      </div>
+      <div class="sitio">
+        <a href="sitio2.html">
+          <img src="sitio2.jpg" alt="Sitio 2" />
+        </a>
+      </div>
+      <div class="sitio">
+        <a href="sitio3.html">
+          <img src="sitio3.jpg" alt="Sitio 3" />
+        </a>
+      </div>
+      <div class="sitio">
+        <a href="sitio4.html">
+          <img src="sitio4.jpg" alt="Sitio 4" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Sección de Paquetes en Cards -->
+    <h2>Precios</h2>
+    <section id="paquetes">
+      <div class="card">
+        <h3>Paquete 1</h3>
+        <p>Descripción del paquete 1.</p>
+        <p>Precio: $X</p>
+      </div>
+      <div class="card">
+        <h3>Paquete 2</h3>
+        <p>Descripción del paquete 2.</p>
+        <p>Precio: $Y</p>
+      </div>
+      <div class="card">
+        <h3>Paquete 3</h3>
+        <p>Descripción del paquete 3.</p>
+        <p>Precio: $Z</p>
+      </div>
+    </section>
+
+    <!-- Sección de Formulario de Contacto -->
+    <section id="contacto">
+      <h2>Ponte en contacto con nosotros</h2>
+      <div id="formulario">
+        <form>
+          <h3>Déjanos tu mensaje:</h3>
+          <div class="form-group">
+            <input placeholder="Nombres*" id="nombre" name="nombres" required />
+          </div>
+          <div class="form-group">
+            <input
+              placeholder="Apellidos*" id="apellidos" name="apellidos" required />
+          </div>
+          <div class="form-group">
+            <input placeholder="Email*" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+      <p id="derechos">2024 Horizon Travel. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
